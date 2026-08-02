@@ -1,0 +1,630 @@
+:root {
+  --bg: #0b1020;
+  --panel: #111936;
+  --panel-2: #162142;
+  --text: #f4f7fb;
+  --muted: #b8c3d9;
+  --line: #233055;
+  --brand: #4f8cff;
+  --brand-2: #7aa6ff;
+  --shadow: 0 20px 50px rgba(0, 0, 0, .35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(180deg, #0a0f1e 0%, #0d1530 100%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background: rgba(11, 16, 32, .7);
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-logo {
+  gap: 10px;
+}
+
+.logo {
+  width: 300px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.logo.small {
+  width: 120px;
+  height: 28px;
+}
+
+.lang-btn {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  padding: 84px 0 64px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: var(--brand-2);
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 5vw, 4.4rem);
+  line-height: 1.08;
+  margin: 0 0 18px;
+}
+
+.hero-text {
+  color: var(--muted);
+  font-size: 1.08rem;
+  max-width: 620px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 18px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, var(--brand), #6aa2ff);
+  color: white;
+  box-shadow: 0 12px 30px rgba(79, 140, 255, .35);
+}
+
+.btn.secondary {
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .08);
+  color: var(--text);
+}
+
+/* FEATURED PRODUCT */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.phone-card {
+  width: min(360px, 100%);
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text);
+  cursor: pointer;
+  transition: .2s;
+}
+
+.phone-card:hover {
+  transform: translateY(-4px);
+}
+
+.phone-card *,
+.phone-card:hover,
+.phone-card:visited {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.app-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+.app-label {
+  color: var(--brand-2);
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+/* SECTION */
+.section {
+  padding: 30px 0;
+}
+
+.section-head {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  margin: 0;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 20px;
+  padding: 22px;
+}
+
+.card-icon {
+  font-size: 1.8rem;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+/* CONTACT */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 20px;
+  padding: 22px;
+  transition: transform .2s, border-color .2s;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(79, 140, 255, 0.3);
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  background: rgba(79, 140, 255, 0.12);
+  border: 1px solid rgba(79, 140, 255, 0.3);
+  border-radius: 18px;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-content h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.contact-text {
+  color: var(--brand-2);
+  font-size: 0.95rem;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+@media(max-width: 860px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 480px) {
+  .contact-card {
+    padding: 18px;
+  }
+
+  .contact-icon {
+    width: 54px;
+    height: 54px;
+    font-size: 1.6rem;
+  }
+}
+
+/* LEGAL PAGES */
+.legal-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.legal-content h1 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 12px;
+}
+
+.legal-content h2 {
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+  margin-top: 35px;
+  margin-bottom: 12px;
+  color: var(--brand-2);
+}
+
+.legal-content p,
+.legal-content li {
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.legal-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--brand-2);
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 30px;
+  transition: transform .2s;
+}
+
+.back-link:hover {
+  transform: translateX(-4px);
+}
+
+/* FOOTER REVISED */
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, .08);
+  padding: 10px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.footer-copyright {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  text-align: right;
+}
+
+.footer-links-list a {
+  color: var(--muted);
+  text-decoration: none !important;
+  font-size: 0.95rem;
+  transition: color 0.2s, transform 0.2s;
+  display: inline-block;
+}
+
+.footer-links-list a:hover {
+  color: var(--brand-2);
+  transform: translateX(-3px);
+  text-decoration: none !important;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:860px) {
+
+  .hero-grid,
+  .cards,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    width: 300px;
+    height: 45px;
+  }
+}
+
+@media(max-width:600px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links-list {
+    text-align: left;
+  }
+
+  .footer-links-list a:hover {
+    transform: translateX(3px);
+  }
+}
+
+@media(max-width:480px) {
+  .logo {
+    width: 180px;
+    height: 45px;
+  }
+
+  .hero {
+    padding: 40px 0 30px;
+  }
+}
+
+/* BACK TO TOP BUTTON */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  background: rgba(30, 41, 59, 0.3);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 99;
+  backdrop-filter: blur(4px);
+
+  /* 기본 상태는 숨김 */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, background 0.2s, transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+/* 스크롤을 내려서 이 클래스가 붙으면 버튼이 나타남 */
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top svg {
+  transition: transform 0.2s;
+  opacity: 0.85;
+}
+
+.back-to-top:hover {
+  background: rgba(79, 140, 255, 0.85);
+  border-color: rgba(79, 140, 255, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.back-to-top:hover svg {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* FOOTER SPACING */
+.footer {
+  padding-bottom: 80px;
+}
+
+@media(max-width: 768px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .footer {
+    padding-bottom: 70px;
+  }
+}
+
+/* MAIN PRODUCT REVISED */
+.product {
+  background: rgba(255, 255, 255, .03);
+  border-top: 1px solid rgba(255, 255, 255, .06);
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
+}
+
+.product-card-main {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  text-decoration: none;
+  color: var(--text);
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 20px;
+  padding: 24px 28px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.product-card-main:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: rgba(79, 140, 255, 0.3);
+}
+
+.product-card-main *,
+.product-card-main:hover,
+.product-card-main:visited,
+.product-card-main:active {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+/* LEFT GROUP (Large QR Code) */
+.product-left-group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-img-large {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  background: white;
+  padding: 6px;
+  border-radius: 14px;
+}
+
+/* CONTENT AREA */
+.main-product-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.main-product-header {
+  display: flex;
+  align-items: center;
+}
+
+/* 아이콘, 타이틀, 플레이 버튼을 나란히 붙여서 배치하는 컨테이너 */
+.title-with-badge {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* 폰트 크기에 맞춘 작은 앱 아이콘 */
+.inline-app-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.main-product-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* GOOGLE PLAY BUTTON (TikiTalk 바로 옆에 밀착) */
+.google-play-store-button {
+  width: 110px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform .2s;
+}
+
+.google-play-store-button:hover {
+  transform: translateY(-2px);
+}
+
+.main-product-content p {
+  color: var(--muted);
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media(max-width: 860px) {
+  .product-card-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
