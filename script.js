@@ -163,8 +163,8 @@ function renderSharedFooter(activeTranslations) {
         <div class="footer-right">
           <ul class="footer-links-list">
             <li><a href="terms.html" data-i18n-key="footer.terms">${activeTranslations["footer.terms"] || "Terms of Service"}</a></li>
-            <li><a href="child-safety.html" data-i18n-key="footer.childSafety">${activeTranslations["footer.childSafety"] || "Child Safety Standards"}</a></li>
             <li><a href="privacy.html" data-i18n-key="footer.privacy">${activeTranslations["footer.privacy"] || "Privacy Policy"}</a></li>
+            <li><a href="child-safety.html" data-i18n-key="footer.childSafety">${activeTranslations["footer.childSafety"] || "Child Safety Standards"}</a></li>
           </ul>
         </div>
       </div>

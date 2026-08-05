@@ -389,22 +389,35 @@ h1 {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
-  gap: 0px;
+  flex-direction: row;
+  /* column → row 변경 */
+  gap: 0;
   text-align: right;
+}
+
+.footer-links-list li {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links-list li:not(:last-child)::after {
+  content: "|";
+  margin: 0 8px;
+  color: var(--muted);
 }
 
 .footer-links-list a {
   color: var(--muted);
   text-decoration: none !important;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   transition: color 0.2s, transform 0.2s;
   display: inline-block;
 }
 
 .footer-links-list a:hover {
   color: var(--brand-2);
-  transform: translateX(-3px);
+  transform: translateY(-1px);
+  /* 좌우 이동 제거 */
   text-decoration: none !important;
 }
 
