@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="SMK is a mobile app development company creating innovative digital products.">
+  <meta name="description" data-i18n-key="page.description" content="SMK is a mobile app development company creating innovative digital products.">
 
-  <title>SMK DevLabs | Mobile App Development Company</title>
+  <title data-i18n-key="page.title">SMK DevLabs | Mobile App Development Company</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -19,12 +19,12 @@
       <div class="logo-wrap">
         <a href="index.html"
           style="display: flex; align-items: center; text-decoration: none; color: inherit;">
-          <img src="assets/logo.png" alt="SMK Logo" class="logo">
+          <img src="assets/img/logo.png" alt="SMK Logo" class="logo">
         </a>
       </div>
 
-      <button id="langToggle" class="lang-btn" onclick="toggleLanguage()">
-        Kor
+      <button id="langToggle" class="lang-btn">
+        <span data-i18n-key="ui.toggleLabel">KR</span>
       </button>
     </div>
   </header>
@@ -33,21 +33,18 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow" data-en="Mobile App Specialists" data-ko="모바일 앱 전문 기업">Mobile App Specialists</p>
-          <h1 data-en="We Build Mobile Apps That People Love" data-ko="사람들이 사랑하는 모바일 앱을 만듭니다">We Build Mobile Apps That
-            People Love</h1>
-          <p class="hero-text"
-            data-en="SMK is a mobile-first software company focused on creating fast, reliable, and user-friendly applications for global users."
-            data-ko="SMK는 글로벌 사용자를 위한 빠르고 안정적이며 사용자 친화적인 애플리케이션을 만드는 모바일 중심 소프트웨어 회사입니다.">
+          <p class="eyebrow" data-i18n-key="hero.eyebrow">Mobile App Specialists</p>
+          <h1 data-i18n-key="hero.title">We Build Mobile Apps That People Love</h1>
+          <p class="hero-text" data-i18n-key="hero.description">
             SMK is a mobile-first software company focused on creating fast, reliable, and user-friendly applications
             for global users.
           </p>
           <div class="hero-actions">
             <a class="btn primary" href="#product">
-              <span data-en="Download Apps" data-ko="제품 다운로드">"Download Apps</span>
+              <span data-i18n-key="hero.download">Download Apps</span>
             </a>
             <a class="btn secondary" href="#contact">
-              <span data-en="Contact Us" data-ko="문의하기">Contact Us</span>
+              <span data-i18n-key="hero.contact">Contact Us</span>
             </a>
           </div>
         </div>
@@ -57,11 +54,11 @@
           <a class="phone-card" href="https://play.google.com/store/apps/details?id=com.smk.tikitalk" target="_blank"
             rel="noreferrer"
             style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; padding: 28px 24px;">
-            <span class="hero-text" data-en="TikiTalk ChatApp" data-ko="티키톡(랜덤채팅앱)"
+            <span class="hero-text" data-i18n-key="hero.productTitle"
               style="color: var(--brand-2); font-size: 1.55rem; font-weight: 600;">TikiTalk ChatApp</span>
-            <img src="assets/tikitalk-qr.png" alt="QR Code"
+            <img src="assets/img/tikitalk-qr.png" alt="QR Code"
               style="width: 200px; height: 200px; object-fit: contain; background: white; padding: 6px; border-radius: 12px;">
-            <span data-en="QR Scan" data-ko="QR 스캔"
+            <span data-i18n-key="hero.productScan"
               style="color: var(--muted); font-size: 1.75rem; font-weight: 600;">QR Scan</span>
           </a>
         </div>
@@ -71,29 +68,23 @@
     <section class="section">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow" data-en="Why SMK" data-ko="SMK의 강점">Why SMK</p>
-          <h2 data-en="Built for Mobile from Day One" data-ko="처음부터 모바일을 위해 설계합니다">Built for Mobile from Day One</h2>
+          <p class="eyebrow" data-i18n-key="why.title">Why SMK</p>
+          <h2 data-i18n-key="why.heading">Built for Mobile from Day One</h2>
         </div>
 
         <div class="cards">
           <article class="card">
-            <div class="card-icon">📱</div>
-            <h3 data-en="Mobile-First Design" data-ko="모바일 우선 디자인">📱Mobile-First Design</h3>
-            <p data-en="Every product is designed for the best smartphone experience."
-              data-ko="모든 제품은 최고의 스마트폰 경험을 위해 설계됩니다.">Every product is designed for the best smartphone experience.</p>
+            <h3 data-i18n-key="why.card1.title">📱Mobile-First Design</h3>
+            <p data-i18n-key="why.card1.description">Every product is designed for the best smartphone experience.</p>
           </article>
           <article class="card">
-            <div class="card-icon">⚡</div>
-            <h3 data-en="Fast Development" data-ko="빠른 개발">⚡Fast Development</h3>
-            <p data-en="We turn ideas into working mobile apps quickly and efficiently."
-              data-ko="아이디어를 빠르고 효율적으로 실제 모바일 앱으로 만듭니다.">We turn ideas into working mobile apps quickly and efficiently.
+            <h3 data-i18n-key="why.card2.title">⚡Fast Development</h3>
+            <p data-i18n-key="why.card2.description">We turn ideas into working mobile apps quickly and efficiently.
             </p>
           </article>
           <article class="card">
-            <div class="card-icon">🌍</div>
-            <h3 data-en="Global Ready" data-ko="글로벌 서비스">🌍Global Ready</h3>
-            <p data-en="Our apps are built with multilingual and international users in mind."
-              data-ko="다국어 및 글로벌 사용자를 고려하여 앱을 개발합니다.">Our apps are built with multilingual and international users in
+            <h3 data-i18n-key="why.card3.title">🌍Global Ready</h3>
+            <p data-i18n-key="why.card3.description">Our apps are built with multilingual and international users in
               mind.</p>
           </article>
         </div>
@@ -104,24 +95,23 @@
     <section class="section product" id="product">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow" data-en="Our Main Product" data-ko="주요 제품">Our Main Product</p>
+          <p class="eyebrow" data-i18n-key="product.title">Our Main Product</p>
         </div>
         <a class="product-card-main" href="https://play.google.com/store/apps/details?id=com.smk.tikitalk"
           target="_blank" rel="noreferrer">
           <div class="product-left-group">
-            <img src="assets/tikitalk-qr.png" alt="TikiTalk QR Code" class="qr-img-large">
+            <img src="assets/img/tikitalk-qr.png" alt="TikiTalk QR Code" class="qr-img-large">
           </div>
           <div class="main-product-content">
             <div class="main-product-header">
               <div class="title-with-badge">
-                <img src="assets/app-icon.png" alt="TikiTalk Icon" class="inline-app-icon">
-                <h2 data-en="TikiTalk App" data-ko="티키톡(채팅)">TikiTalk App</h2>
+                <img src="assets/img/app-icon.png" alt="TikiTalk Icon" class="inline-app-icon">
+                <h2 data-i18n-key="product.heading">TikiTalk App</h2>
                 <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                   alt="Get it on Google Play" class="google-play-store-button">
               </div>
             </div>
-            <p data-en="A mobile communication platform that helps users connect easily through random matching for enjoyable conversations."
-              data-ko="랜덤으로 쉽게 매칭하여 즐거운 대화를 돕는 모바일 커뮤니케이션 플랫폼입니다.">
+            <p data-i18n-key="product.description">
               A mobile communication platform that helps users connect easily through random matching for enjoyable
               conversations.
             </p>
@@ -132,13 +122,13 @@
 
     <section class="section contact" id="contact">
       <div class="container">
-        <p class="eyebrow" data-en="Get in Touch" data-ko="문의하기">Get in Touch</p>
+        <p class="eyebrow" data-i18n-key="contact.title">Get in Touch</p>
         <div class="contact-grid">
           <div class="contact-card">
             <a href="mailto:help@smk-dev.com" class="contact-link">
               <div class="contact-icon">💬</div>
               <div class="contact-content">
-                <h3 data-en="General Inquiry" data-ko="일반 문의">General Inquiry</h3>
+                <h3 data-i18n-key="contact.general.title">General Inquiry</h3>
                 <span class="contact-text">help@smk-dev.com</span>
               </div>
             </a>
@@ -147,7 +137,7 @@
             <a href="mailto:contact@smk-dev.com" class="contact-link">
               <div class="contact-icon">🤝</div>
               <div class="contact-content">
-                <h3 data-en="Investment & Partnership" data-ko="투자 및 파트너십">Investment & Partnership</h3>
+                <h3 data-i18n-key="contact.partnership.title">Investment & Partnership</h3>
                 <span class="contact-text">contact@smk-dev.com</span>
               </div>
             </a>
@@ -157,24 +147,7 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <div class="logo-wrap footer-logo">
-          <img src="assets/logo.png" alt="SMK Logo" class="logo small">
-        </div>
-        <p class="footer-copyright">© 2024 SMK DevLabs. All rights reserved.</p>
-      </div>
-      <div class="footer-right">
-        <ul class="footer-links-list">
-          <li><a href="terms.html" data-en="Terms of Service" data-ko="이용약관">Terms of Service</a></li>
-          <li><a href="child-safety.html" data-en="Child Safety Standards" data-ko="아동 안전 표준">Child Safety Standards</a>
-          </li>
-          <li><a href="privacy.html" data-en="Privacy Policy" data-ko="개인정보처리방침">Privacy Policy</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
   <a href="#" class="back-to-top" aria-label="Back to top">
     <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"
@@ -183,41 +156,6 @@
     </svg>
   </a>
 
-  <script>
-    function setIndexLanguage(lang) {
-      localStorage.setItem('site_lang', lang);
-      document.documentElement.lang = lang;
-      const langToggle = document.getElementById('langToggle');
-      if (langToggle) {
-        langToggle.textContent = lang === 'ko' ? 'EN' : 'KR';
-      }
-
-      document.querySelectorAll('[data-ko][data-en]').forEach(el => {
-        el.textContent = lang === 'ko' ? el.getAttribute('data-ko') : el.getAttribute('data-en');
-      });
-    }
-
-    function toggleLanguage() {
-      const currentLang = localStorage.getItem('site_lang') || 'ko';
-      setIndexLanguage(currentLang === 'ko' ? 'en' : 'ko');
-    }
-
-    window.addEventListener('scroll', () => {
-      const backToTop = document.querySelector('.back-to-top');
-      if (backToTop) {
-        if (window.scrollY > 100) {
-          backToTop.classList.add('show');
-        } else {
-          backToTop.classList.remove('show');
-        }
-      }
-    });
-
-    window.addEventListener('DOMContentLoaded', () => {
-      const savedLang = localStorage.getItem('site_lang') || 'ko';
-      setIndexLanguage(savedLang);
-    });
-  </script>
   <script src="script.js"></script>
 </body>
 
