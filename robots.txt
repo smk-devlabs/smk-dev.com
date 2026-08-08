@@ -1,0 +1,4 @@
+User-agent: \*
+Allow: /
+
+Sitemap: https://smk-dev.com/sitemap.xml
