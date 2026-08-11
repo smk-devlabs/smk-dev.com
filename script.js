@@ -512,7 +512,7 @@ async function renderSharedFooter(
                             <a href="terms.html">
                                 ${
                                     systemTranslations["footer.terms"] ||
-                                    "Terms of Service"
+                                    "Terms"
                                 }
                             </a>
                         </li>
@@ -521,7 +521,7 @@ async function renderSharedFooter(
                             <a href="privacy.html">
                                 ${
                                     systemTranslations["footer.privacy"] ||
-                                    "Privacy Policy"
+                                    "Privacy"
                                 }
                             </a>
                         </li>
@@ -1138,18 +1138,17 @@ function scrollToBottom() {
  */
 function initializeScrollBottomButton() {
 
+    if (getPageTranslationKey() === "system") {
+        return;
+    }
+
     const button =
         getOrCreateScrollBottomButton();
-
 
     if (!button) {
         return;
     }
 
-
-    /**
-     * Prevent duplicate event listeners.
-     */
     if (
         button.dataset.scrollBottomBound !==
         "true"
@@ -1160,11 +1159,9 @@ function initializeScrollBottomButton() {
             scrollToBottom
         );
 
-
         button.dataset.scrollBottomBound =
             "true";
     }
-
 
     updateScrollBottomButton();
 }

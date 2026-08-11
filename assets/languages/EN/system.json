@@ -1,31 +1,41 @@
 {
-  "hero.eyebrow": "Mobile App Specialists",
-  "hero.title": "We Build Mobile Apps That People Love",
-  "hero.description": "SMK is a mobile-first software company creating fast, reliable, and user-friendly mobile applications for global users, including TikiTalk, a random chat app for meeting and connecting with new people.",
-  "hero.download": "Download Apps",
+  "hero.eyebrow": "AI & Mobile Technology",
+  "hero.title": "Creating What’s Next in Mobile",
+  "hero.description": "SMK DevLabs develops innovative digital experiences powered by AI and mobile technology. We create intuitive and reliable services for a global audience, including TikiTalk, our random chat and social communication app.",
+  "hero.download": "Download Product",
   "hero.contact": "Contact Us",
-  "hero.productTitle": "TikiTalk ChatApp",
-  "hero.productScan": "Scan QR Code to Download",
-  "page.title": "SMK DevLabs | Mobile App Development Company",
-  "page.description": "SMK is a mobile app development company creating innovative digital products.",
-  "why.title": "Why SMK",
-  "why.heading": "Built for Mobile from Day One",
-  "why.card1.title": "Mobile-First Design",
-  "why.card1.description": "Every product is designed for the best smartphone experience.",
-  "why.card2.title": "Fast Development",
-  "why.card2.description": "We turn ideas into working mobile apps quickly and efficiently.",
+  "hero.productTitle": "TikiTalk (Random Chat)",
+  "hero.productScan": "Scan the QR Code",
+  "hero.productDownload": "to Download",
+
+  "page.title": "SMK DevLabs | Mobile App & Software Development Company",
+  "page.description": "SMK DevLabs is a mobile app development company creating innovative digital products.",
+
+  "why.title": "Why SMK DevLabs",
+  "why.heading": "Technology and Development for Better Mobile Experiences",
+
+  "why.card1.title": "User First",
+  "why.card1.description": "We design and develop intuitive, convenient, and reliable services by considering user behavior and the mobile environment.",
+
+  "why.card2.title": "AI Innovation",
+  "why.card2.description": "We combine AI and mobile technologies to create services that deliver smarter and more personalized user experiences.",
+
   "why.card3.title": "Global Ready",
-  "why.card3.description": "Our apps are built with multilingual and international users in mind.",
+  "why.card3.description": "We develop services with multilingual support and diverse user environments in mind, making them accessible and convenient for users around the world.",
+
   "product.title": "Our Main Product",
-  "product.heading": "TikiTalk App",
-  "product.description": "A mobile communication platform that helps users connect easily through random matching for enjoyable conversations.",
+  "product.heading": "TikiTalk (Random Chat)",
+  "product.description": "A mobile communication platform that makes it easy to connect with others through random matching and enjoy engaging conversations.",
+
   "contact.title": "Get in Touch",
   "contact.general.title": "General Inquiry",
   "contact.partnership.title": "Investment & Partnership",
-  "footer.copyright": "© 2024 SMK DevLabs. All rights reserved.",
-  "footer.terms": "Terms of Service",
-  "footer.childSafety": "Child Safety Standards",
-  "footer.privacy": "Privacy Policy",
+
+  "footer.copyright": "Copyright © 2024 SMK. All rights reserved.",
+  "footer.terms": "Terms",
+  "footer.childSafety": "Child Safety",
+  "footer.privacy": "Privacy",
+
   "ui.toggleLabel": "KR",
   "ui.homeButton": "Back to Home"
 }
