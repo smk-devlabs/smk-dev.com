@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.smk.tikitalk",
+    "sha256_cert_fingerprints": [
+      "6B:32:FC:FB:BD:4F:3D:AE:21:CF:4E:32:78:E8:F6:A1:BB:E0:A8:FB:45:3F:1B:39:67:01:11:82:EA:3F:20:07"
+    ]
+  }
+}]

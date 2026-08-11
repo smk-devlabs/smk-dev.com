@@ -274,7 +274,115 @@
             <p class="policy-effective-date">Effective Date: February 12, 2024</p>
         </div>
     </div>
+    <!-- Scroll-to-bottom button -->
+    <button id="scroll-bottom-button" type="button" aria-label="Scroll to bottom" title="Scroll to bottom">
+    </button>
 
+    <script>
+        /*
+         * Scroll-to-bottom button behavior.
+         *
+         * The button styling is handled by style.css.
+         * This script only controls scrolling and visibility.
+         */
+
+        (function () {
+
+            const button = document.getElementById("scroll-bottom-button");
+
+            if (!button) {
+                return;
+            }
+
+
+            /*
+             * Determine whether the page has reached the bottom.
+             */
+
+            function isAtBottom() {
+
+                const scrollTop =
+                    window.scrollY ||
+                    document.documentElement.scrollTop;
+
+                const viewportHeight =
+                    window.innerHeight;
+
+                const documentHeight =
+                    document.documentElement.scrollHeight;
+
+                return (
+                    scrollTop + viewportHeight >=
+                    documentHeight - 2
+                );
+            }
+
+
+            /*
+             * Update button visibility.
+             *
+             * Use the hidden attribute directly so the button
+             * cannot remain visible because of conflicting CSS.
+             */
+
+            function updateButtonVisibility() {
+
+                button.hidden = isAtBottom();
+            }
+
+
+            /*
+             * Smoothly scroll to the bottom of the page.
+             */
+
+            function scrollToBottom() {
+
+                window.scrollTo({
+                    top: document.documentElement.scrollHeight,
+                    behavior: "smooth"
+                });
+            }
+
+
+            /*
+             * Button click event.
+             */
+
+            button.addEventListener(
+                "click",
+                scrollToBottom
+            );
+
+
+            /*
+             * Update visibility while scrolling.
+             */
+
+            window.addEventListener(
+                "scroll",
+                updateButtonVisibility,
+                { passive: true }
+            );
+
+
+            /*
+             * Update visibility when the window size changes.
+             */
+
+            window.addEventListener(
+                "resize",
+                updateButtonVisibility
+            );
+
+
+            /*
+             * Initial visibility state.
+             */
+
+            updateButtonVisibility();
+
+        })();
+    </script>
 </body>
 
 </html>

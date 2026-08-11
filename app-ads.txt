@@ -1,2 +1,4 @@
 google.com, pub-8849473105614172, DIRECT, f08c47fec0942fa0
 google.com, pub-5513443989913245, DIRECT, f08c47fec0942fa0
+pubmatic.com, 159856, DIRECT, 5d62403b186f2ace
+ironsrc.com, 674977, DIRECT

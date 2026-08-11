@@ -10,6 +10,10 @@
   --shadow: 0 20px 50px rgba(0, 0, 0, .35);
 }
 
+/* =========================================================
+GLOBAL
+========================================================= */
+
 * {
   box-sizing: border-box;
 }
@@ -20,38 +24,64 @@ html {
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, sans-serif;
-  background: linear-gradient(180deg, #0a0f1e 0%, #0d1530 100%);
+
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+
+  background:
+    linear-gradient(180deg,
+      #0a0f1e 0%,
+      #0d1530 100%);
+
   color: var(--text);
   line-height: 1.6;
 }
 
 .container {
-  width: min(1120px, calc(100% - 40px));
+  width: min(1120px,
+      calc(100% - 40px));
+
   margin: 0 auto;
 }
 
-/* HEADER */
+/* =========================================================
+HEADER
+========================================================= */
+
 .header {
   position: sticky;
   top: 0;
   z-index: 50;
+
   backdrop-filter: blur(10px);
-  background: rgba(11, 16, 32, .7);
-  border-bottom: 1px solid rgba(255, 255, 255, .06);
+
+  background:
+    rgba(11, 16, 32, .7);
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, .06);
 }
 
 .nav {
   display: flex;
+
   align-items: center;
   justify-content: space-between;
+
   padding: 16px 0;
 }
 
 .logo-wrap {
   display: flex;
+
   align-items: center;
+
   gap: 16px;
 }
 
@@ -62,6 +92,7 @@ body {
 .logo {
   width: 300px;
   height: 45px;
+
   object-fit: contain;
 }
 
@@ -71,584 +102,1357 @@ body {
 }
 
 .lang-btn {
-  border: 1px solid var(--line);
-  background: var(--panel);
-  color: var(--text);
-  padding: 10px 14px;
-  border-radius: 999px;
-  cursor: pointer;
+  border:
+    1px solid var(--line);
+
+  background:
+    var(--panel);
+
+  color:
+    var(--text);
+
+  padding:
+    10px 14px;
+
+  border-radius:
+    999px;
+
+  cursor:
+    pointer;
 }
 
-/* HERO */
+/* =========================================================
+HERO
+========================================================= */
+
 .hero {
-  padding: 84px 0 64px;
+  padding:
+    84px 0 64px;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap: 32px;
-  align-items: center;
+
+  grid-template-columns:
+    1.2fr .8fr;
+
+  gap:
+    32px;
+
+  align-items:
+    center;
 }
 
 .eyebrow {
-  color: var(--brand-2);
-  font-weight: 700;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+  color:
+    var(--brand-2);
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    .08em;
+
+  text-transform:
+    uppercase;
+
+  margin-bottom:
+    10px;
 }
 
 h1 {
-  font-size: clamp(2.3rem, 5vw, 4.4rem);
-  line-height: 1.08;
-  margin: 0 0 18px;
+  font-size:
+    clamp(2.3rem,
+      5vw,
+      4.4rem);
+
+  line-height:
+    1.08;
+
+  margin:
+    0 0 18px;
 }
 
 .hero-text {
-  color: var(--muted);
-  font-size: 1.08rem;
-  max-width: 620px;
+  color:
+    var(--muted);
+
+  font-size:
+    1.08rem;
+
+  max-width:
+    620px;
 }
 
 .hero-actions {
-  display: flex;
-  gap: 14px;
-  margin-top: 28px;
-  flex-wrap: wrap;
+  display:
+    flex;
+
+  gap:
+    14px;
+
+  margin-top:
+    28px;
+
+  flex-wrap:
+    wrap;
 }
 
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 18px;
-  border-radius: 14px;
-  text-decoration: none;
-  font-weight: 700;
-  transition: .2s;
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    14px 18px;
+
+  border-radius:
+    14px;
+
+  text-decoration:
+    none;
+
+  font-weight:
+    700;
+
+  transition:
+    .2s;
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+  transform:
+    translateY(-2px);
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, var(--brand), #6aa2ff);
-  color: white;
-  box-shadow: 0 12px 30px rgba(79, 140, 255, .35);
+  background:
+    linear-gradient(135deg,
+      var(--brand),
+      #6aa2ff);
+
+  color:
+    white;
+
+  box-shadow:
+    0 12px 30px rgba(79, 140, 255, .35);
 }
 
 .btn.secondary {
-  background: rgba(255, 255, 255, .06);
-  border: 1px solid rgba(255, 255, 255, .08);
-  color: var(--text);
+  background:
+    rgba(255, 255, 255, .06);
+
+  border:
+    1px solid rgba(255, 255, 255, .08);
+
+  color:
+    var(--text);
 }
 
-/* FEATURED PRODUCT */
+/* =========================================================
+FEATURED PRODUCT
+========================================================= */
+
 .hero-visual {
-  display: flex;
-  justify-content: center;
+  display:
+    flex;
+
+  justify-content:
+    center;
 }
 
 .phone-card {
-  width: min(360px, 100%);
-  background: linear-gradient(180deg, var(--panel), var(--panel-2));
-  border: 1px solid rgba(255, 255, 255, .08);
-  border-radius: 24px;
-  padding: 22px;
-  box-shadow: var(--shadow);
-  display: flex;
-  gap: 18px;
-  align-items: center;
-  text-decoration: none;
-  color: var(--text);
-  cursor: pointer;
-  transition: .2s;
+  width:
+    min(360px, 100%);
+
+  background:
+    linear-gradient(180deg,
+      var(--panel),
+      var(--panel-2));
+
+  border:
+    1px solid rgba(255, 255, 255, .08);
+
+  border-radius:
+    24px;
+
+  padding:
+    22px;
+
+  box-shadow:
+    var(--shadow);
+
+  display:
+    flex;
+
+  gap:
+    18px;
+
+  align-items:
+    center;
+
+  text-decoration:
+    none;
+
+  color:
+    var(--text);
+
+  cursor:
+    pointer;
+
+  transition:
+    .2s;
 }
 
 .phone-card:hover {
-  transform: translateY(-4px);
+  transform:
+    translateY(-4px);
 }
 
 .phone-card *,
 .phone-card:hover,
 .phone-card:visited {
-  text-decoration: none !important;
-  color: inherit;
+  text-decoration:
+    none !important;
+
+  color:
+    inherit;
 }
 
 .app-icon {
-  width: 96px;
-  height: 96px;
-  border-radius: 22px;
-  object-fit: cover;
+  width:
+    96px;
+
+  height:
+    96px;
+
+  border-radius:
+    22px;
+
+  object-fit:
+    cover;
 }
 
 .app-label {
-  color: var(--brand-2);
-  font-size: .85rem;
-  font-weight: 700;
+  color:
+    var(--brand-2);
+
+  font-size:
+    .85rem;
+
+  font-weight:
+    700;
 }
 
-/* SECTION */
+/* =========================================================
+SECTION
+========================================================= */
+
 .section {
-  padding: 30px 0;
+  padding:
+    30px 0;
 }
 
 .section-head {
-  margin-bottom: 20px;
+  margin-bottom:
+    20px;
 }
 
 .section h2 {
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  margin: 0;
+  font-size:
+    clamp(1.8rem,
+      3vw,
+      3rem);
+
+  margin:
+    0;
 }
 
-/* CARDS */
+/* =========================================================
+CARDS
+========================================================= */
+
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap:
+    20px;
 }
 
 .card {
-  background: rgba(255, 255, 255, .04);
-  border: 1px solid rgba(255, 255, 255, .08);
-  border-radius: 20px;
-  padding: 22px;
+  background:
+    rgba(255, 255, 255, .04);
+
+  border:
+    1px solid rgba(255, 255, 255, .08);
+
+  border-radius:
+    20px;
+
+  padding:
+    22px;
 }
 
 .card-icon {
-  font-size: 1.8rem;
+  font-size:
+    1.8rem;
 }
 
 .card p {
-  color: var(--muted);
+  color:
+    var(--muted);
 }
 
-/* CONTACT */
+/* =========================================================
+CONTACT
+========================================================= */
+
 .contact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap:
+    20px;
 }
 
 .contact-card {
-  background: rgba(255, 255, 255, .04);
-  border: 1px solid rgba(255, 255, 255, .08);
-  border-radius: 20px;
-  padding: 22px;
-  transition: transform .2s, border-color .2s;
+  background:
+    rgba(255, 255, 255, .04);
+
+  border:
+    1px solid rgba(255, 255, 255, .08);
+
+  border-radius:
+    20px;
+
+  padding:
+    22px;
+
+  transition:
+    transform .2s,
+    border-color .2s;
 }
 
 .contact-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(79, 140, 255, 0.3);
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(79, 140, 255, 0.3);
 }
 
 .contact-link {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  text-decoration: none;
-  color: inherit;
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    18px;
+
+  text-decoration:
+    none;
+
+  color:
+    inherit;
 }
 
 .contact-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 64px;
-  height: 64px;
-  background: rgba(79, 140, 255, 0.12);
-  border: 1px solid rgba(79, 140, 255, 0.3);
-  border-radius: 18px;
-  font-size: 2rem;
-  line-height: 1;
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  flex-shrink:
+    0;
+
+  width:
+    64px;
+
+  height:
+    64px;
+
+  background:
+    rgba(79, 140, 255, 0.12);
+
+  border:
+    1px solid rgba(79, 140, 255, 0.3);
+
+  border-radius:
+    18px;
+
+  font-size:
+    2rem;
+
+  line-height:
+    1;
 }
 
 .contact-content {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    6px;
 }
 
 .contact-content h3 {
-  margin: 0;
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--text);
+  margin:
+    0;
+
+  font-size:
+    1.15rem;
+
+  font-weight:
+    600;
+
+  color:
+    var(--text);
 }
 
 .contact-text {
-  color: var(--brand-2);
-  font-size: 0.95rem;
-  font-weight: 500;
-  word-break: break-all;
+  color:
+    var(--brand-2);
+
+  font-size:
+    0.95rem;
+
+  font-weight:
+    500;
+
+  word-break:
+    break-all;
 }
 
-@media(max-width: 860px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-}
+/* =========================================================
+LEGAL PAGES
+========================================================= */
 
-@media(max-width: 480px) {
-  .contact-card {
-    padding: 18px;
-  }
-
-  .contact-icon {
-    width: 54px;
-    height: 54px;
-    font-size: 1.6rem;
-  }
-}
-
-/* LEGAL PAGES */
 .legal-container {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 20px;
+  max-width:
+    800px;
+
+  margin:
+    60px auto;
+
+  padding:
+    0 20px;
 }
 
 .legal-content h1 {
-  font-size: clamp(2rem, 4vw, 2.5rem);
-  margin-bottom: 12px;
+  font-size:
+    clamp(2rem,
+      4vw,
+      2.5rem);
+
+  margin-bottom:
+    12px;
 }
 
 .legal-content h2 {
-  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
-  margin-top: 35px;
-  margin-bottom: 12px;
-  color: var(--brand-2);
+  font-size:
+    clamp(1.2rem,
+      2.5vw,
+      1.4rem);
+
+  margin-top:
+    35px;
+
+  margin-bottom:
+    12px;
+
+  color:
+    var(--brand-2);
 }
 
 .legal-content p,
 .legal-content li {
-  color: var(--muted);
-  line-height: 1.7;
-  margin-bottom: 12px;
+  color:
+    var(--muted);
+
+  line-height:
+    1.7;
+
+  margin-bottom:
+    12px;
 }
 
 .legal-content ul {
-  padding-left: 20px;
-  margin-bottom: 20px;
+  padding-left:
+    20px;
+
+  margin-bottom:
+    20px;
 }
 
 .back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--brand-2);
-  text-decoration: none;
-  font-weight: 600;
-  margin-bottom: 30px;
-  transition: transform .2s;
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+
+  color:
+    var(--brand-2);
+
+  text-decoration:
+    none;
+
+  font-weight:
+    600;
+
+  margin-bottom:
+    30px;
+
+  transition:
+    transform .2s;
 }
 
 .back-link:hover {
-  transform: translateX(-4px);
+  transform:
+    translateX(-4px);
 }
 
-/* FOOTER REVISED */
+/* =========================================================
+FOOTER
+========================================================= */
+
 .footer {
-  border-top: 1px solid rgba(255, 255, 255, .08);
-  padding: 10px 0;
+  border-top:
+    1px solid rgba(255, 255, 255, .08);
+
+  padding:
+    10px 0;
+
+  padding-bottom:
+    80px;
 }
 
 .footer-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 0px;
+  display:
+    flex;
+
+  justify-content:
+    space-between;
+
+  align-items:
+    flex-start;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    0;
 }
 
 .footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    0;
 }
 
 .footer-copyright {
-  color: var(--muted);
-  font-size: 0.85rem;
-  margin: 0;
+  color:
+    var(--muted);
+
+  font-size:
+    0.85rem;
+
+  margin:
+    0;
 }
 
 .footer-right {
-  display: flex;
-  flex-direction: column;
+  display:
+    flex;
+
+  flex-direction:
+    column;
 }
 
 .footer-links-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  /* column → row 변경 */
-  gap: 0;
-  text-align: right;
+  list-style:
+    none;
+
+  padding:
+    0;
+
+  margin:
+    0;
+
+  display:
+    flex;
+
+  flex-direction:
+    row;
+
+  gap:
+    0;
+
+  text-align:
+    right;
 }
 
 .footer-links-list li {
-  display: flex;
-  align-items: center;
+  display:
+    flex;
+
+  align-items:
+    center;
 }
 
 .footer-links-list li:not(:last-child)::after {
-  content: "|";
-  margin: 0 8px;
-  color: var(--muted);
+  content:
+    "|";
+
+  margin:
+    0 8px;
+
+  color:
+    var(--muted);
 }
 
 .footer-links-list a {
-  color: var(--muted);
-  text-decoration: none !important;
-  font-size: 0.75rem;
-  transition: color 0.2s, transform 0.2s;
-  display: inline-block;
+  color:
+    var(--muted);
+
+  text-decoration:
+    none !important;
+
+  font-size:
+    0.75rem;
+
+  transition:
+    color 0.2s;
+
+  display:
+    inline-block;
 }
 
 .footer-links-list a:hover {
-  color: var(--brand-2);
-  transform: translateY(-1px);
-  /* 좌우 이동 제거 */
-  text-decoration: none !important;
+  color:
+    var(--brand-2);
+
+  text-decoration:
+    none !important;
 }
 
-/* MOBILE RESPONSIVE */
-@media(max-width:860px) {
+/* =========================================================
+SCROLL BUTTONS
 
-  .hero-grid,
-  .cards,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
+Both buttons use exactly the same visual design.
+Only their position and arrow direction are different.
 
-  .logo {
-    width: 300px;
-    height: 45px;
-  }
+The arrows are pure CSS.
+There is NO horizontal shaft/line.
+There is NO movement on hover or active state.
+========================================================= */
+
+.back-to-top,
+#scroll-bottom-button {
+  position:
+    fixed;
+
+  width:
+    48px;
+
+  height:
+    48px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    0;
+
+  margin:
+    0;
+
+  background:
+    rgba(30, 41, 59, 0.3);
+
+  color:
+    #ffffff;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius:
+    50%;
+
+  backdrop-filter:
+    blur(4px);
+
+  -webkit-backdrop-filter:
+    blur(4px);
+
+  z-index:
+    9999;
+
+  cursor:
+    pointer;
+
+  text-decoration:
+    none;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-@media(max-width:600px) {
-  .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer-links-list {
-    text-align: left;
-  }
-
-  .footer-links-list a:hover {
-    transform: translateX(3px);
-  }
+/* Hide scroll-to-bottom button when hidden attribute is active */
+#scroll-bottom-button[hidden] {
+  display: none !important;
 }
 
-@media(max-width:480px) {
-  .logo {
-    width: 180px;
-    height: 45px;
-  }
+/* =========================================================
+BACK TO TOP
+========================================================= */
 
-  .hero {
-    padding: 40px 0 30px;
-  }
-}
-
-/* BACK TO TOP BUTTON */
 .back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 48px;
-  height: 48px;
-  background: rgba(30, 41, 59, 0.3);
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  z-index: 99;
-  backdrop-filter: blur(4px);
+  bottom:
+    30px;
 
-  /* 기본 상태는 숨김 */
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease, background 0.2s, transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  right:
+    30px;
+
+  opacity:
+    0;
+
+  visibility:
+    hidden;
 }
 
-/* 스크롤을 내려서 이 클래스가 붙으면 버튼이 나타남 */
 .back-to-top.show {
-  opacity: 1;
-  visibility: visible;
+  opacity:
+    1;
+
+  visibility:
+    visible;
 }
+
+/* =========================================================
+SCROLL TO BOTTOM
+========================================================= */
+
+#scroll-bottom-button {
+  left:
+    50%;
+
+  bottom:
+    30px;
+
+  transform:
+    translateX(-50%);
+
+  opacity:
+    1;
+
+  visibility:
+    visible;
+}
+
+/* =========================================================
+HIDE ORIGINAL SVG
+========================================================= */
 
 .back-to-top svg {
-  transition: transform 0.2s;
-  opacity: 0.85;
+  display:
+    none;
 }
 
-.back-to-top:hover {
-  background: rgba(79, 140, 255, 0.85);
-  border-color: rgba(79, 140, 255, 0.5);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  color: #ffffff;
+/* =========================================================
+CSS ARROWS
+
+UP:
+  ^
+
+DOWN:
+  v
+
+Only two diagonal lines are used.
+There is no horizontal line.
+========================================================= */
+
+/* Common arrow head */
+
+.back-to-top::before,
+#scroll-bottom-button::before {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  width:
+    10px;
+
+  height:
+    10px;
+
+  border-left:
+    2px solid currentColor;
+
+  border-top:
+    2px solid currentColor;
+
+  opacity:
+    0.9;
+
+  border-radius:
+    1px;
+
+  transition:
+    opacity 0.2s ease;
 }
 
-.back-to-top:hover svg {
-  opacity: 1;
-  transform: translateY(-2px);
+/* =========================================================
+UP ARROW
+
+^
+========================================================= */
+
+.back-to-top::before {
+  transform:
+    rotate(45deg);
+
+  top:
+    18px;
 }
 
-/* FOOTER SPACING */
-.footer {
-  padding-bottom: 80px;
+/* =========================================================
+DOWN ARROW
+
+v
+========================================================= */
+
+#scroll-bottom-button::before {
+  transform:
+    rotate(225deg);
+
+  top:
+    15px;
 }
 
-@media(max-width: 768px) {
-  .back-to-top {
-    bottom: 20px;
-    right: 20px;
-    width: 42px;
-    height: 42px;
-  }
+/* =========================================================
+REMOVE ARROW SHAFT COMPLETELY
 
-  .footer {
-    padding-bottom: 70px;
-  }
+The previous ::after horizontal line is intentionally disabled.
+========================================================= */
+
+.back-to-top::after,
+#scroll-bottom-button::after {
+  display:
+    none;
 }
 
-/* MAIN PRODUCT REVISED */
+/* =========================================================
+HOVER
+
+The button does NOT move.
+The arrow does NOT move.
+Only visual highlighting changes.
+========================================================= */
+
+.back-to-top:hover,
+#scroll-bottom-button:hover {
+  background:
+    rgba(79, 140, 255, 0.85);
+
+  border-color:
+    rgba(79, 140, 255, 0.5);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top:hover::before,
+#scroll-bottom-button:hover::before {
+  opacity:
+    1;
+}
+
+/* =========================================================
+ACTIVE
+
+The buttons do NOT move when clicked.
+========================================================= */
+
+.back-to-top:active {
+  transform:
+    none;
+}
+
+#scroll-bottom-button:active {
+  transform:
+    translateX(-50%);
+}
+
+/* =========================================================
+HIDDEN STATE
+========================================================= */
+
+#scroll-bottom-button.hidden {
+  opacity:
+    0;
+
+  visibility:
+    hidden;
+
+  pointer-events:
+    none;
+
+  transform:
+    translateX(-50%);
+}
+
+/* =========================================================
+KEYBOARD FOCUS
+========================================================= */
+
+.back-to-top:focus-visible,
+#scroll-bottom-button:focus-visible {
+  outline:
+    2px solid rgba(255, 255, 255, 0.3);
+
+  outline-offset:
+    3px;
+}
+
+/* =========================================================
+MAIN PRODUCT
+========================================================= */
+
 .product {
-  background: rgba(255, 255, 255, .03);
-  border-top: 1px solid rgba(255, 255, 255, .06);
-  border-bottom: 1px solid rgba(255, 255, 255, .06);
+  background:
+    rgba(255, 255, 255, .03);
+
+  border-top:
+    1px solid rgba(255, 255, 255, .06);
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, .06);
 }
 
 .product-card-main {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  text-decoration: none;
-  color: var(--text);
-  background: rgba(255, 255, 255, .04);
-  border: 1px solid rgba(255, 255, 255, .08);
-  border-radius: 20px;
-  padding: 24px 28px;
-  cursor: pointer;
-  transition: .2s;
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    32px;
+
+  text-decoration:
+    none;
+
+  color:
+    var(--text);
+
+  background:
+    rgba(255, 255, 255, .04);
+
+  border:
+    1px solid rgba(255, 255, 255, .08);
+
+  border-radius:
+    20px;
+
+  padding:
+    24px 28px;
+
+  cursor:
+    pointer;
+
+  transition:
+    .2s;
 }
 
 .product-card-main:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
-  border-color: rgba(79, 140, 255, 0.3);
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    var(--shadow);
+
+  border-color:
+    rgba(79, 140, 255, 0.3);
 }
 
 .product-card-main *,
 .product-card-main:hover,
 .product-card-main:visited,
 .product-card-main:active {
-  text-decoration: none !important;
-  color: inherit;
+  text-decoration:
+    none !important;
+
+  color:
+    inherit;
 }
 
-/* LEFT GROUP (Large QR Code) */
+/* =========================================================
+LEFT GROUP
+========================================================= */
+
 .product-left-group {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-shrink:
+    0;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
 }
 
 .qr-img-large {
-  width: 96px;
-  height: 96px;
-  object-fit: contain;
-  background: white;
-  padding: 6px;
-  border-radius: 14px;
+  width:
+    96px;
+
+  height:
+    96px;
+
+  object-fit:
+    contain;
+
+  background:
+    white;
+
+  padding:
+    6px;
+
+  border-radius:
+    14px;
 }
 
-/* CONTENT AREA */
+/* =========================================================
+CONTENT AREA
+========================================================= */
+
 .main-product-content {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  flex: 1;
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    12px;
+
+  flex:
+    1;
 }
 
 .main-product-header {
-  display: flex;
-  align-items: center;
+  display:
+    flex;
+
+  align-items:
+    center;
 }
 
-/* 아이콘, 타이틀, 플레이 버튼을 나란히 붙여서 배치하는 컨테이너 */
 .title-with-badge {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    12px;
 }
 
-/* 폰트 크기에 맞춘 작은 앱 아이콘 */
 .inline-app-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  object-fit: cover;
+  width:
+    32px;
+
+  height:
+    32px;
+
+  border-radius:
+    8px;
+
+  object-fit:
+    cover;
 }
 
 .main-product-header h2 {
-  margin: 0;
-  font-size: 1.8rem;
-  font-weight: 700;
+  margin:
+    0;
+
+  font-size:
+    1.8rem;
+
+  font-weight:
+    700;
 }
 
-/* GOOGLE PLAY BUTTON (TikiTalk 바로 옆에 밀착) */
+/* =========================================================
+GOOGLE PLAY BUTTON
+========================================================= */
+
 .google-play-store-button {
-  width: 110px;
-  height: auto;
-  display: inline-block;
-  vertical-align: middle;
-  transition: transform .2s;
+  width:
+    110px;
+
+  height:
+    auto;
+
+  display:
+    inline-block;
+
+  vertical-align:
+    middle;
+
+  transition:
+    transform .2s;
 }
 
 .google-play-store-button:hover {
-  transform: translateY(-2px);
+  transform:
+    translateY(-2px);
 }
 
 .main-product-content p {
-  color: var(--muted);
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
+  color:
+    var(--muted);
+
+  margin:
+    0;
+
+  font-size:
+    1rem;
+
+  line-height:
+    1.5;
 }
 
-@media(max-width: 860px) {
-  .product-card-main {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
+/* =========================================================
+KOREAN SUB LIST
+========================================================= */
 
 .korean-sub-list {
-  list-style: none;
-  margin: 8px 0 8px 0;
-  padding-left: 2em;
+  list-style:
+    none;
+
+  margin:
+    8px 0;
+
+  padding-left:
+    2em;
 }
 
 .korean-sub-list li {
-  margin: 4px 0;
-  padding-left: 0;
+  margin:
+    4px 0;
+
+  padding-left:
+    0;
 }
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+@media (max-width: 860px) {
+
+  .hero-grid,
+  .cards,
+  .contact-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+  .logo {
+    width:
+      300px;
+
+    height:
+      45px;
+  }
+
+  .product-card-main {
+    flex-direction:
+      column;
+
+    align-items:
+      flex-start;
+  }
+
+  .contact-grid {
+    grid-template-columns:
+      1fr;
+  }
+}
+
+/* =========================================================
+TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .back-to-top,
+  #scroll-bottom-button {
+    width:
+      42px;
+
+    height:
+      42px;
+
+    bottom:
+      20px;
+  }
+
+  .back-to-top {
+    right:
+      20px;
+  }
+
+  #scroll-bottom-button {
+    left:
+      50%;
+  }
+
+  .back-to-top::before,
+  #scroll-bottom-button::before {
+    width:
+      8px;
+
+    height:
+      8px;
+  }
+
+  /* Keep the same arrow direction and position.
+     No horizontal line is displayed. */
+
+  .back-to-top::before {
+    transform:
+      rotate(45deg);
+
+    top:
+      16px;
+  }
+
+  #scroll-bottom-button::before {
+    transform:
+      rotate(225deg);
+
+    top:
+      13px;
+  }
+
+  .back-to-top:hover::before {
+    transform:
+      rotate(45deg);
+  }
+
+  #scroll-bottom-button:hover::before {
+    transform:
+      rotate(225deg);
+  }
+}
+
+/* =========================================================
+SMALL MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .footer-inner {
+    flex-direction:
+      column;
+
+    align-items:
+      flex-start;
+  }
+
+  .footer-links-list {
+    text-align:
+      left;
+  }
+
+  .footer-links-list a:hover {
+    transform:
+      none;
+  }
+}
+
+/* =========================================================
+EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .logo {
+    width:
+      180px;
+
+    height:
+      45px;
+  }
+
+  .hero {
+    padding:
+      40px 0 30px;
+  }
+
+  .contact-card {
+    padding:
+      18px;
+  }
+
+  .contact-icon {
+    width:
+      54px;
+
+    height:
+      54px;
+
+    font-size:
+      1.6rem;
+  }
+}
+
