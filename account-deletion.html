@@ -1,0 +1,504 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+        content="TikiTalk account deletion instructions. Learn how to request deletion of your TikiTalk account and associated data.">
+
+    <title>TikiTalk | Account Deletion</title>
+
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/SMK_LOGO_512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/SMK_LOGO_512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="canonical" href="https://smk-dev.com/account-deletion.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smk-dev.com/account-deletion.html">
+    <meta property="og:title" content="TikiTalk | Account Deletion">
+    <meta property="og:description"
+        content="Learn how to request deletion of your TikiTalk account and associated data.">
+    <meta property="og:image" content="https://smk-dev.com/assets/img/SMK_LOGO_512x512.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+
+            <div class="logo-wrap">
+                <a href="/" style="display:flex; align-items:center; text-decoration:none; color:inherit;">
+                    <img src="assets/img/logo.png" alt="SMK DevLabs Logo" class="logo">
+                </a>
+            </div>
+
+            <button id="langToggle" class="lang-btn" type="button">
+                <span id="langLabel">KO</span>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="section-head">
+                    <p class="eyebrow" id="eyebrow">TikiTalk</p>
+                    <h1 id="pageTitle">Account Deletion</h1>
+                </div>
+
+                <div class="legal-content">
+
+                    <p>
+                        <strong id="developer"></strong>
+                    </p>
+
+                    <p id="intro"></p>
+
+                    <hr>
+
+                    <h2 id="requestTitle"></h2>
+
+                    <p id="requestIntro"></p>
+
+                    <h3 id="appRequestTitle"></h3>
+
+                    <ol>
+                        <li id="appStep1"></li>
+                        <li id="appStep2"></li>
+                    </ol>
+
+                    <h3 id="emailRequestTitle"></h3>
+
+                    <ol>
+                        <li id="emailStep1"></li>
+                        <li id="emailStep2"></li>
+                        <li id="emailStep3"></li>
+                        <li id="emailStep4"></li>
+                    </ol>
+
+                    <p id="requestProcess"></p>
+
+                    <p>
+                        <strong id="processingTime"></strong>
+                    </p>
+
+                    <p id="permanent"></p>
+
+                    <hr>
+
+                    <h2 id="cautionTitle"></h2>
+
+                    <p id="cautionIntro"></p>
+
+                    <ul>
+                        <li id="caution1"></li>
+                        <li id="caution2"></li>
+                        <li id="caution3"></li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 id="deletedTitle"></h2>
+
+                    <p id="deletedIntro"></p>
+
+                    <ul>
+                        <li id="deleted1"></li>
+                        <li id="deleted2"></li>
+                        <li id="deleted3"></li>
+                        <li id="deleted4"></li>
+                        <li id="deleted5"></li>
+                        <li id="deleted6"></li>
+                        <li id="deleted7"></li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 id="retainedTitle"></h2>
+
+                    <p id="retainedIntro"></p>
+
+                    <h3 id="backupTitle"></h3>
+
+                    <p id="backupText"></p>
+
+                    <p>
+                        <strong id="retentionPeriod"></strong>
+                    </p>
+
+                    <h3 id="purchaseTitle"></h3>
+
+                    <p id="purchaseText"></p>
+
+                    <hr>
+
+                    <h2 id="importantTitle"></h2>
+
+                    <p id="important1"></p>
+
+                    <p id="important2"></p>
+
+                    <p id="important3"></p>
+
+                    <hr>
+
+                    <h2 id="contactTitle"></h2>
+
+                    <p>
+                        <strong>SMK DevLabs</strong><br>
+                        <a href="mailto:help@smk-dev.com">help@smk-dev.com</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div id="site-footer"></div>
+
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </a>
+
+    <script>
+
+        const translations = {
+
+            en: {
+                eyebrow: "TikiTalk",
+
+                pageTitle:
+                    "Account Deletion",
+
+                developer:
+                    "Developer: SMK DevLabs",
+
+                intro:
+                    "TikiTalk is a global text-based random chat and social communication app that allows users to meet new people and communicate through text.",
+
+                requestTitle:
+                    "🗑️ How to Delete Your TikiTalk Account",
+
+                requestIntro:
+                    "You can request deletion of your TikiTalk account and associated personal data directly from the TikiTalk app or by email. Please use either of the following methods.",
+
+                appRequestTitle:
+                    "📱 Option 1 — Request Deletion in the TikiTalk App",
+
+                appStep1:
+                    "Open the TikiTalk app and go to <strong>Settings</strong>.",
+
+                appStep2:
+                    "Select <strong>Contact Us</strong> and send a request asking us to delete your TikiTalk account. Your account information will be used to identify your account and process the deletion request.",
+
+                emailRequestTitle:
+                    "📧 Option 2 — Request Deletion by Email",
+
+                emailStep1:
+                    'Send an email to <a href="mailto:help@smk-dev.com">help@smk-dev.com</a>.',
+
+                emailStep2:
+                    'Use <strong>TikiTalk Account Deletion Request</strong> as the email subject.',
+
+                emailStep3:
+                    "Include the email address associated with your TikiTalk account.",
+
+                emailStep4:
+                    "If you cannot access the TikiTalk app, provide the email address associated with your TikiTalk account so that we can verify your account.",
+
+                requestProcess:
+                    "After verifying the deletion request, SMK DevLabs will process the account deletion.",
+
+                processingTime:
+                    "Account deletion requests are processed within 30 days after verification.",
+
+                permanent:
+                    "Account deletion is permanent and cannot be undone.",
+
+                cautionTitle:
+                    "⚠️ Important: Before Deleting Your Account",
+
+                cautionIntro:
+                    "Please note the following before submitting an account deletion request:",
+
+                caution1:
+                    "All account information and information stored in the TikiTalk app will be deleted.",
+
+                caution2:
+                    "Any remaining <strong>T-Coin</strong> balance in your account will also be permanently deleted.",
+
+                caution3:
+                    "Any purchased <strong>permanent passes, lifetime access, or other account-based benefits</strong> will also be deleted. After account deletion, <strong>refunds or restoration of T-Coin, permanent passes, lifetime access, or other purchased benefits are not available.</strong>",
+
+                deletedTitle:
+                    "Data That Will Be Deleted",
+
+                deletedIntro:
+                    "When your TikiTalk account is deleted, the following account-related data will be deleted from our active systems.",
+
+                deleted1:
+                    "TikiTalk account information",
+
+                deleted2:
+                    "User ID and account identifiers",
+
+                deleted3:
+                    "Email address associated with the account",
+
+                deleted4:
+                    "Age, gender, nationality, and language information provided by the user",
+
+                deleted5:
+                    "User profile information",
+
+                deleted6:
+                    "Chat and messaging data associated with the account",
+
+                deleted7:
+                    "Other personal information associated with the TikiTalk account",
+
+                retainedTitle:
+                    "Data That May Be Retained",
+
+                retainedIntro:
+                    "Certain information may be retained for a limited period when necessary for legal compliance, security, fraud prevention, financial records, or other legitimate legal obligations.",
+
+                backupTitle:
+                    "Backup Data",
+
+                backupText:
+                    "Account data may temporarily remain in backup systems after account deletion. Backup data is not used for normal TikiTalk operations and is automatically overwritten or deleted according to our backup retention cycle.",
+
+                retentionPeriod:
+                    "Maximum additional retention period: 90 days.",
+
+                purchaseTitle:
+                    "Purchase and Transaction Records",
+
+                purchaseText:
+                    "Records required for purchase verification, refunds, accounting, taxation, or other legal obligations may be retained for the period required by applicable laws and regulations. Payment and purchase information processed through Google Play may also be retained and managed by Google according to Google's policies.",
+
+                importantTitle:
+                    "Important Information",
+
+                important1:
+                    "Deleting your TikiTalk account is permanent and cannot be reversed.",
+
+                important2:
+                    "Any T-Coin, permanent passes, lifetime access, or other account-based benefits remaining in the account will be permanently lost after account deletion.",
+
+                important3:
+                    "Once account deletion has been completed, the deleted account and its associated data and benefits cannot be restored.",
+
+                contactTitle:
+                    "Contact"
+            },
+
+            ko: {
+                eyebrow:
+                    "TikiTalk",
+
+                pageTitle:
+                    "계정 삭제",
+
+                developer:
+                    "개발자: SMK DevLabs",
+
+                intro:
+                    "TikiTalk은 전 세계의 새로운 사람들과 텍스트를 통해 대화할 수 있는 글로벌 텍스트 기반 랜덤 채팅 및 소셜 커뮤니케이션 앱입니다.",
+
+                requestTitle:
+                    "🗑️ TikiTalk 계정 삭제 방법",
+
+                requestIntro:
+                    "TikiTalk 계정 및 계정과 관련된 개인정보의 삭제를 요청할 수 있습니다. TikiTalk 앱에서 직접 요청하거나 이메일을 통해 요청할 수 있습니다.",
+
+                appRequestTitle:
+                    "📱 방법 1 — TikiTalk 앱에서 삭제 요청",
+
+                appStep1:
+                    "TikiTalk 앱을 실행한 후 <strong>설정</strong>으로 이동합니다.",
+
+                appStep2:
+                    "<strong>문의하기</strong>를 선택한 후 TikiTalk 계정 삭제를 요청하는 내용을 보내주세요. 계정 정보는 삭제 요청 확인 및 계정 식별을 위해 사용됩니다.",
+
+                emailRequestTitle:
+                    "📧 방법 2 — 이메일로 삭제 요청",
+
+                emailStep1:
+                    '<a href="mailto:help@smk-dev.com">help@smk-dev.com</a>으로 이메일을 보내주세요.',
+
+                emailStep2:
+                    '이메일 제목에 <strong>TikiTalk Account Deletion Request</strong>를 입력해주세요.',
+
+                emailStep3:
+                    "TikiTalk 계정에 연결된 이메일 주소를 기재해주세요.",
+
+                emailStep4:
+                    "TikiTalk 앱에 접근할 수 없는 경우 계정 확인을 위해 TikiTalk 계정에 연결된 이메일 주소를 기재해주세요.",
+
+                requestProcess:
+                    "삭제 요청을 확인하고 본인 확인 절차가 완료되면 SMK DevLabs에서 계정 삭제를 진행합니다.",
+
+                processingTime:
+                    "계정 삭제 요청은 본인 확인이 완료된 후 최대 30일 이내에 처리됩니다.",
+
+                permanent:
+                    "계정 삭제는 영구적으로 처리되며 삭제 후 복구할 수 없습니다.",
+
+                cautionTitle:
+                    "⚠️ 계정 삭제(탈퇴) 시 주의사항",
+
+                cautionIntro:
+                    "계정 삭제를 요청하기 전에 다음 사항을 반드시 확인해주세요.",
+
+                caution1:
+                    "계정 정보 및 앱 내 모든 정보가 삭제됩니다.",
+
+                caution2:
+                    "계정에 남아 있는 <strong>T-Coin</strong> 잔액도 함께 영구적으로 삭제됩니다.",
+
+                caution3:
+                    "구매한 <strong>영구 패스권, 평생 이용권 및 기타 계정 기반 혜택</strong>도 함께 삭제됩니다. 계정 삭제 후에는 <strong>T-Coin, 영구 패스권, 평생 이용권 및 기타 구매 혜택에 대한 환불이나 복구가 불가능합니다.</strong>",
+
+                deletedTitle:
+                    "삭제되는 데이터",
+
+                deletedIntro:
+                    "TikiTalk 계정이 삭제되면 다음 계정 관련 데이터가 활성 운영 시스템에서 삭제됩니다.",
+
+                deleted1:
+                    "TikiTalk 계정 정보",
+
+                deleted2:
+                    "사용자 ID 및 계정 식별 정보",
+
+                deleted3:
+                    "계정에 연결된 이메일 주소",
+
+                deleted4:
+                    "사용자가 제공한 나이, 성별, 국가 및 언어 정보",
+
+                deleted5:
+                    "사용자 프로필 정보",
+
+                deleted6:
+                    "계정과 연결된 채팅 및 메시지 데이터",
+
+                deleted7:
+                    "TikiTalk 계정과 연결된 기타 개인정보",
+
+                retainedTitle:
+                    "일정 기간 보관될 수 있는 데이터",
+
+                retainedIntro:
+                    "법률 준수, 보안, 부정행위 방지, 금융 기록 또는 기타 법적 의무를 위해 일부 정보는 일정 기간 추가로 보관될 수 있습니다.",
+
+                backupTitle:
+                    "백업 데이터",
+
+                backupText:
+                    "계정 삭제 후에도 백업 시스템에 데이터가 일시적으로 남아 있을 수 있습니다. 백업 데이터는 TikiTalk의 일반적인 서비스 운영에 사용되지 않으며 백업 보관 주기에 따라 자동으로 덮어쓰거나 삭제됩니다.",
+
+                retentionPeriod:
+                    "최대 추가 보관 기간: 90일",
+
+                purchaseTitle:
+                    "구매 및 거래 기록",
+
+                purchaseText:
+                    "구매 확인, 환불, 회계, 세금 또는 기타 법적 의무를 위해 필요한 기록은 관련 법률 및 규정에서 요구하는 기간 동안 보관될 수 있습니다. Google Play를 통해 처리된 구매 및 결제 정보는 Google의 정책에 따라 Google에서 별도로 관리 및 보관할 수 있습니다.",
+
+                importantTitle:
+                    "중요 안내",
+
+                important1:
+                    "TikiTalk 계정 삭제는 영구적으로 처리되며 취소하거나 되돌릴 수 없습니다.",
+
+                important2:
+                    "계정에 남아 있는 T-Coin, 영구 패스권, 평생 이용권 및 기타 계정 기반 혜택은 계정 삭제 후 모두 소멸됩니다.",
+
+                important3:
+                    "계정 삭제가 완료되면 삭제된 계정과 관련 데이터 및 혜택은 복구할 수 없습니다.",
+
+                contactTitle:
+                    "문의"
+            }
+
+        };
+
+        let currentLanguage =
+            localStorage.getItem("accountDeletionLanguage") || "en";
+
+        function updateLanguage() {
+
+            const t = translations[currentLanguage];
+
+            document.documentElement.lang =
+                currentLanguage;
+
+            Object.keys(t).forEach(key => {
+
+                const element =
+                    document.getElementById(key);
+
+                if (element) {
+                    element.innerHTML =
+                        t[key];
+                }
+
+            });
+
+            document.getElementById("langLabel").textContent =
+                currentLanguage === "en"
+                    ? "KO"
+                    : "EN";
+
+            document.title =
+                currentLanguage === "en"
+                    ? "TikiTalk | Account Deletion"
+                    : "TikiTalk | 계정 삭제";
+        }
+
+        document
+            .getElementById("langToggle")
+            .addEventListener("click", function () {
+
+                currentLanguage =
+                    currentLanguage === "en"
+                        ? "ko"
+                        : "en";
+
+                localStorage.setItem(
+                    "accountDeletionLanguage",
+                    currentLanguage
+                );
+
+                updateLanguage();
+            });
+
+        updateLanguage();
+
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
