@@ -107,30 +107,20 @@ a:active {
   box-shadow: var(--shadow);
 }
 
-.landing-download-card {
-  width: min(360px, 100%);
-  flex-direction: column;
-  gap: 14px;
-  padding: 24px;
-  text-align: center;
+.landing-app-icon-link {
+  display: inline-flex;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 30px;
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  box-shadow: var(--shadow);
+  transition: .2s;
 }
 
-.landing-download-card .landing-app-icon {
-  width: 88px;
-  border-radius: 20px;
+.landing-app-icon-link:hover {
+  transform: translateY(-4px);
 }
 
-.landing-qr {
-  width: 220px;
-  height: 220px;
-  max-width: 100%;
-  object-fit: contain;
-  padding: 6px;
-  border-radius: 14px;
-  background: #fff;
-}
-
-.landing-qr-caption,
 .qr-action-caption {
   color: var(--muted);
   font-size: .95rem;
@@ -168,18 +158,16 @@ a:active {
 }
 
 .landing-cta .container {
-  padding: 28px;
-  border: 1px solid rgba(255, 255, 255, .08);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, .04);
+  width: min(1120px, calc(100% - 40px));
 }
 
-.landing-cta h2 {
+.landing-cta .main-product-content h2 {
   margin-top: 0;
 }
 
 .landing-cta .btn {
   margin: 8px 0;
+  align-self: flex-start;
 }
 
 /* =========================================================
