@@ -138,6 +138,10 @@ a:active {
   margin-top: 0;
 }
 
+.landing-cards {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+}
+
 .landing-faq details {
   margin: 12px 0;
   padding: 18px 20px;
@@ -1177,19 +1181,17 @@ MAIN PRODUCT
 ========================================================= */
 
 .product {
-  background:
-    rgba(255, 255, 255, .03);
-
-  border-top:
-    1px solid rgba(255, 255, 255, .06);
-
-  border-bottom:
-    1px solid rgba(255, 255, 255, .06);
+  background: transparent;
+  border: 0;
 }
 
 .product-card-main {
   display:
     flex;
+
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 
   align-items:
     center;
@@ -1313,6 +1315,8 @@ CONTENT AREA
 
   flex:
     1;
+
+  min-width: 0;
 }
 
 .product-details-link {
