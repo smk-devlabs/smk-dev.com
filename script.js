@@ -93,7 +93,7 @@ async function loadTranslations(
         getLocaleFolder(normalizedLang);
 
     const filePath =
-        `assets/languages/${localeFolder}/${pageName}.json?v=20261029-6`;
+        `assets/languages/${localeFolder}/${pageName}.json?v=20261029-7`;
 
 
     try {
@@ -412,7 +412,7 @@ async function loadSystemTranslations(
         getLocaleFolder(normalizedLang);
 
     const filePath =
-        `assets/languages/${localeFolder}/system.json?v=20261029-6`;
+        `assets/languages/${localeFolder}/system.json?v=20261029-7`;
 
 
     try {
@@ -532,6 +532,12 @@ async function renderSharedFooter(
                                     systemTranslations["footer.childSafety"] ||
                                     "Child Safety Standards"
                                 }
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/sitemap.html">
+                                ${systemTranslations["footer.sitemap"] || "Sitemap"}
                             </a>
                         </li>
 
@@ -705,6 +711,18 @@ async function renderTranslations(
      */
     document.documentElement.lang =
         normalizedLang;
+
+
+    /**
+     * Keep product links on the matching language page.
+     */
+    document
+        .querySelectorAll("[data-product-page-link]")
+        .forEach((link) => {
+            link.href = normalizedLang === "ko"
+                ? "/tikilingo-ko.html"
+                : "/tikilingo.html";
+        });
 
 
     /**
