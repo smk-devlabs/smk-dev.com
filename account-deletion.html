@@ -443,8 +443,13 @@
 
         };
 
+        const languageFromUrl =
+            new URLSearchParams(window.location.search).get("lang");
+
         let currentLanguage =
-            localStorage.getItem("accountDeletionLanguage") || "en";
+            (languageFromUrl === "ko" || languageFromUrl === "en")
+                ? languageFromUrl
+                : (localStorage.getItem("accountDeletionLanguage") || "en");
 
         function updateLanguage() {
 
