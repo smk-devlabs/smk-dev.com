@@ -43,6 +43,10 @@ body {
   line-height: 1.6;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: min(1120px,
       calc(100% - 40px));
@@ -97,6 +101,37 @@ body {
   height: auto;
   border-radius: 28px;
   box-shadow: var(--shadow);
+}
+
+.landing-download-card {
+  width: min(360px, 100%);
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  text-align: center;
+}
+
+.landing-download-card .landing-app-icon {
+  width: 88px;
+  border-radius: 20px;
+}
+
+.landing-qr {
+  width: 220px;
+  height: 220px;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 6px;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.landing-qr-caption,
+.qr-action-caption {
+  color: var(--muted);
+  font-size: .95rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .store-note,
@@ -1235,6 +1270,13 @@ LEFT GROUP
     center;
 }
 
+.product-left-group[href] {
+  flex-direction: column;
+  gap: 8px;
+  color: inherit;
+  text-decoration: none;
+}
+
 .qr-img-large {
   width:
     96px;
@@ -1271,6 +1313,11 @@ CONTENT AREA
 
   flex:
     1;
+}
+
+.product-details-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .main-product-header {
