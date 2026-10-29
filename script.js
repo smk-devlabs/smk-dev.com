@@ -42,6 +42,15 @@ function getLocaleFolder(lang) {
  */
 function getDefaultLanguage() {
 
+    const requestedLang =
+        new URLSearchParams(window.location.search).get("lang");
+
+    if (requestedLang) {
+        return requestedLang.toLowerCase().startsWith("ko")
+            ? "ko"
+            : "en";
+    }
+
     const savedLang =
         localStorage.getItem("smk-language") ||
         localStorage.getItem("site_lang");
@@ -462,6 +471,9 @@ async function renderSharedFooter(
     lang
 ) {
 
+    const normalizedLang =
+        normalizeLanguage(lang);
+
     const footerTarget =
         document.getElementById(
             "site-footer"
@@ -509,7 +521,7 @@ async function renderSharedFooter(
                     <ul class="footer-links-list">
 
                         <li>
-                            <a href="terms.html">
+                            <a href="terms.html?lang=${normalizedLang}">
                                 ${
                                     systemTranslations["footer.terms"] ||
                                     "Terms"
@@ -518,7 +530,7 @@ async function renderSharedFooter(
                         </li>
 
                         <li>
-                            <a href="privacy.html">
+                            <a href="privacy.html?lang=${normalizedLang}">
                                 ${
                                     systemTranslations["footer.privacy"] ||
                                     "Privacy"
@@ -527,7 +539,7 @@ async function renderSharedFooter(
                         </li>
 
                         <li>
-                            <a href="child-safety.html">
+                            <a href="child-safety.html?lang=${normalizedLang}">
                                 ${
                                     systemTranslations["footer.childSafety"] ||
                                     "Child Safety Standards"
@@ -536,7 +548,7 @@ async function renderSharedFooter(
                         </li>
 
                         <li>
-                            <a href="/sitemap.html">
+                            <a href="/sitemap${normalizedLang === "ko" ? "-ko" : ""}.html?lang=${normalizedLang}">
                                 ${systemTranslations["footer.sitemap"] || "Sitemap"}
                             </a>
                         </li>
@@ -720,8 +732,14 @@ async function renderTranslations(
         .querySelectorAll("[data-product-page-link]")
         .forEach((link) => {
             link.href = normalizedLang === "ko"
-                ? "/tikilingo-ko.html"
-                : "/tikilingo.html";
+                ? "/tikilingo-ko.html?lang=ko"
+                : "/tikilingo.html?lang=en";
+        });
+
+    document
+        .querySelectorAll("[data-home-link]")
+        .forEach((link) => {
+            link.href = `/?lang=${normalizedLang}`;
         });
 
 
@@ -803,6 +821,21 @@ async function renderTranslations(
     localStorage.setItem(
         "site_lang",
         normalizedLang
+    );
+
+
+    const currentUrl =
+        new URL(window.location.href);
+
+    currentUrl.searchParams.set(
+        "lang",
+        normalizedLang
+    );
+
+    window.history.replaceState(
+        {},
+        "",
+        currentUrl
     );
 }
 
