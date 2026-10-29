@@ -71,11 +71,16 @@ body {
   outline-offset: 3px;
 }
 
-.language-link,
 .landing-source a,
 .landing-faq a,
 .landing-cta a:not(.btn) {
   color: var(--brand-2);
+}
+
+.lang-btn[href] {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 .landing-main .landing-hero {

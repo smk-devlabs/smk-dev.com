@@ -1,15 +1,15 @@
 {
   "hero.eyebrow": "AI & Mobile Technology",
   "hero.title": "Creating What’s Next in Mobile",
-  "hero.description": "SMK DevLabs develops mobile apps and digital services for users around the world. Our featured product, TikiLingo, helps people meet through anonymous text chat, random matching, and language exchange.",
+  "hero.description": "SMK DevLabs develops mobile apps and digital services for users around the world. Our featured product, TikiLingo, is a language exchange app for practicing languages through conversations with people worldwide.",
   "hero.download": "Download Product",
   "hero.contact": "Contact Us",
-  "hero.productTitle": "TikiLingo (Anonymous Random Chat)",
+  "hero.productTitle": "TikiLingo Language Exchange App",
   "hero.productScan": "Scan the QR Code",
   "hero.productDownload": "to Download",
 
   "page.title": "SMK DevLabs | Mobile App Development",
-  "page.description": "SMK DevLabs develops mobile apps and digital services for users around the world. Meet TikiLingo, our language exchange and random chat app.",
+  "page.description": "SMK DevLabs develops mobile apps and digital services for users around the world, including TikiLingo, our language exchange app.",
 
   "why.title": "Why SMK DevLabs",
   "why.heading": "Technology and Development for Better Mobile Experiences",
@@ -24,8 +24,8 @@
   "why.card3.description": "We develop services with multilingual support and diverse user environments in mind, making them accessible and convenient for users around the world.",
 
   "product.title": "Our Main Product",
-  "product.heading": "TikiLingo (formerly TikiTalk)",
-  "product.description": "Meet people worldwide through anonymous text chat, random matching, and language exchange.",
+  "product.heading": "TikiLingo Language Exchange App",
+  "product.description": "Connect with people worldwide and practice languages through conversations and messaging.",
   "product.learnMore": "Explore TikiLingo",
   "product.install": "Get it on Google Play",
 
