@@ -122,8 +122,11 @@ a:active {
 }
 
 .qr-action-caption {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
   color: var(--muted);
-  font-size: .95rem;
+  font-size: .85rem;
   font-weight: 700;
   text-align: center;
 }
@@ -1265,8 +1268,8 @@ LEFT GROUP
 }
 
 .product-left-group[href] {
-  width: 96px;
-  flex: 0 0 96px;
+  width: 132px;
+  flex: 0 0 132px;
   flex-direction: column;
   gap: 8px;
   color: inherit;
@@ -1274,17 +1277,17 @@ LEFT GROUP
 }
 
 .product-left-group[href] .qr-action-caption {
-  width: 96px;
-  max-width: 96px;
+  width: 132px;
+  max-width: 132px;
   line-height: 1.2;
 }
 
 .qr-img-large {
   width:
-    96px;
+    132px;
 
   height:
-    96px;
+    132px;
 
   object-fit:
     contain;
