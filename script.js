@@ -93,7 +93,7 @@ async function loadTranslations(
         getLocaleFolder(normalizedLang);
 
     const filePath =
-        `assets/languages/${localeFolder}/${pageName}.json`;
+        `assets/languages/${localeFolder}/${pageName}.json?v=20261029-4`;
 
 
     try {
@@ -412,7 +412,7 @@ async function loadSystemTranslations(
         getLocaleFolder(normalizedLang);
 
     const filePath =
-        `assets/languages/${localeFolder}/system.json`;
+        `assets/languages/${localeFolder}/system.json?v=20261029-4`;
 
 
     try {
