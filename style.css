@@ -1271,10 +1271,18 @@ LEFT GROUP
 }
 
 .product-left-group[href] {
+  width: 96px;
+  flex: 0 0 96px;
   flex-direction: column;
   gap: 8px;
   color: inherit;
   text-decoration: none;
+}
+
+.product-left-group[href] .qr-action-caption {
+  width: 96px;
+  max-width: 96px;
+  line-height: 1.2;
 }
 
 .qr-img-large {
@@ -1457,6 +1465,10 @@ RESPONSIVE
 
     align-items:
       flex-start;
+  }
+
+  .product-left-group[href] {
+    align-self: center;
   }
 
   .contact-grid {
