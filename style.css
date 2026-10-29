@@ -50,6 +50,94 @@ body {
   margin: 0 auto;
 }
 
+/* Accessible navigation and product landing pages */
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: -10000px;
+  z-index: 100;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--text);
+}
+
+.skip-link:focus {
+  left: 12px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--brand-2);
+  outline-offset: 3px;
+}
+
+.language-link,
+.landing-source a,
+.landing-faq a,
+.landing-cta a:not(.btn) {
+  color: var(--brand-2);
+}
+
+.landing-main .landing-hero {
+  padding-top: 64px;
+}
+
+.landing-subtitle {
+  color: var(--muted);
+  font-size: .62em;
+}
+
+.landing-app-icon {
+  width: min(280px, 70vw);
+  height: auto;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.store-note,
+.landing-source {
+  color: var(--muted);
+  font-size: .94rem;
+}
+
+.landing-cards .card h3 {
+  margin-top: 0;
+}
+
+.landing-faq details {
+  margin: 12px 0;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .04);
+}
+
+.landing-faq summary {
+  cursor: pointer;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.landing-faq details p,
+.landing-cta p {
+  color: var(--muted);
+}
+
+.landing-cta .container {
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .04);
+}
+
+.landing-cta h2 {
+  margin-top: 0;
+}
+
+.landing-cta .btn {
+  margin: 8px 0;
+}
+
 /* =========================================================
 HEADER
 ========================================================= */

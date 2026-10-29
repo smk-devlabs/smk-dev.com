@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <url>
-        <loc>https://smk-dev.com/</loc>
-    </url>
-
-    <url>
-        <loc>https://smk-dev.com/terms.html</loc>
-    </url>
-
-    <url>
-        <loc>https://smk-dev.com/privacy.html</loc>
-    </url>
-
-    <url>
-        <loc>https://smk-dev.com/child-safety.html</loc>
-    </url>
+  <url><loc>https://smk-dev.com/</loc></url>
+  <url><loc>https://smk-dev.com/tikilingo.html</loc></url>
+  <url><loc>https://smk-dev.com/tikilingo-ko.html</loc></url>
+  <url><loc>https://smk-dev.com/terms.html</loc></url>
+  <url><loc>https://smk-dev.com/terms-en.html</loc></url>
+  <url><loc>https://smk-dev.com/terms-ko.html</loc></url>
+  <url><loc>https://smk-dev.com/privacy.html</loc></url>
+  <url><loc>https://smk-dev.com/privacy-en.html</loc></url>
+  <url><loc>https://smk-dev.com/privacy-ko.html</loc></url>
+  <url><loc>https://smk-dev.com/child-safety.html</loc></url>
+  <url><loc>https://smk-dev.com/child-safety-en.html</loc></url>
+  <url><loc>https://smk-dev.com/child-safety-ko.html</loc></url>
+  <url><loc>https://smk-dev.com/account-deletion.html</loc></url>
 
 </urlset>
